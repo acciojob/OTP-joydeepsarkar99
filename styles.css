@@ -1,1 +1,31 @@
 /*  your css code here. If applicable */
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#verification_heading{
+	text-align:center;
+	margin:15px 0px 10px;
+}
+#verification_subtext{
+	font-size:13px;
+	text-align:center;
+	color:gray;
+	margin-bottom:25px;
+}
+.code{
+	width:80px;
+	height:100px;
+	border:1px solid #ccc;
+	font-size:50px;
+	text-align:center;
+	border-radius:5px;
+}
+.code-container{
+	display:flex;
+	justify-content:center;
+	gap:15px;
+}
