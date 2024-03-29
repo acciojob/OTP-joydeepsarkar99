@@ -2,11 +2,10 @@
 let inputs = document.querySelectorAll(".code")
 window.addEventListener("load",()=>inputs[0].focus());
 
-
 let index = 0
 
 for (let i of inputs) {
-    i.addEventListener('input', (eventDetails) => {
+    i.addEventListener('keyup', (eventDetails) => {
         let inputElement = eventDetails.target.value
         if (inputElement.length == 1) {
             if (index < inputs.length - 1) {
