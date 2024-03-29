@@ -5,8 +5,8 @@ window.addEventListener("load",()=>inputs[0].focus());
 
 let index = 0
 
-for (let i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('input', (eventDetails) => {
+for (let i of inputs) {
+    i.addEventListener('input', (eventDetails) => {
         let inputElement = eventDetails.target.value
         if (inputElement.length == 1) {
             if (index < inputs.length - 1) {
